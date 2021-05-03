@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+  padding:0;
+  background-color: #c8d4d2;
+}
+
+.navbar {
+  background-image: url("/images/logo 2.png");
+  background-size: 130px;
+  background-repeat: no-repeat;
+  height: 130px;
+  background-color: #282a29;
+}
+
+.navbar a {
+  border-radius: 10px;
+  display:inline-block;
+  font-size: 20px;
+  color: #ebebeb;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top:40px;
+}
+
+.menu{
+  float:right;
+}
+
+.navbar a:hover{
+  background-color: #adadad;
+  color: #282a29;
+}
+
+.navbar a.active{
+  background-color: #adadad;
+  color: #282a29;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+img{
+  height:130px;
+}
+
+.search{
+  position:relative;
+  height: 50px;
+  background-color: #e9655d;
+}
+
+.search-bar{
+  display:inline-block;
+  padding-top: 10px;
+}
+
+.search-bar input{
+  margin-left:10px;
+  padding: 5px;
+}
+
+.my-account{
+  margin-top: 10px;
+  display:block;
+  font-size: 20px;
+  float:right;
+  margin-right:20px;
+}
+
+.my-account a{
+  text-decoration: none;
+  color:black;
+}
+
+i.fa-user{
+  display:none;
+}
+
+i{
+  padding: 0 5px;
+}
+
+h2{
+  margin-left: 20px;
+}
+
+.banner{
+  border:1px solid black;
+  width:100%;
+}
+
+.banner a:nth-child(even){
+  float:right;
+}
+
+.banner img{
+  width:100%;
+  height:auto;
+}
+
+.shoes{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.shoes img{
+  width:24%;
+  height:auto;
+}
+
+.title{
+  text-align: center;
+}
+
+.container{
+  padding: 10px;
+}
+
+.form , .social{
+  float:left;
+  padding:20px;
+  width:49%;
+}
+
+.form-control{
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label{
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input , textarea{
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  padding: 8px;
+  width:100%;
+  font-size: 14px;
+  font-family:inherit;
+  resize:none;
+}
+
+.form .button{
+  text-align:center;
+}
+
+.form button{
+  background-color: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border:1px solid #e6e6e6;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form button:hover{
+  background-color: #c9c9c9;
+  border:1px solid #c9c9c9;
+}
+
+table{
+  margin:40px;
+
+}
+
+td{
+  padding:10px;
+}
+
+td i{
+  font-size: 20px;
+}
+
+.social-medias , .social-medias i{
+  color:black;
+  text-decoration: none;
+  font-size: 40px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.about-main{
+  width:100%;
+  height:300px;
+}
+
+.about-banner{
+  width:100%;
+  height:100%;
+  filter: blur(2px);
+  background-image: url('/images/jordan.jpg');
+  margin-top:0;
+  padding-top:0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-header{
+  position:absolute;
+  background-color: rgba(222, 222, 222, 0.6); 
+  padding:10px 30px;
+  font-weight: bold;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-info{
+  position: relative;
+  background-color: #f0f0f0;
+  font-size: 20px;
+  width:100%;
+  text-align: center;
+  margin-top: 0;
+  padding:20px 40px;
+}
+
+.process{
+  text-align: center;
+  width:100%;
+}
+
+.process-info{
+  float:left;
+  width:50%;
+  font-size: 20px;
+  padding: 10px 50px;
+}
+
+.process-info i{
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar{
+    background-position: top center;
+    background-size: 80px;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .menu{
+    padding-top:40px;
+    float: none;
+  }
+
+  .navbar a{
+    font-size: 16px;
+  }
+
+  .my-account{
+    margin-top: 15px;
+    font-size: 16px;
+  }
+
+  i.fa-user{
+    display:inline-block;
+  }
+
+  .my-account label{
+    display:none;
+  }
+
+  .shoes img{
+    width:49%;
+    height:auto;
+  }
+
+  .about-header{
+    font-size: 12px;
+    padding:10px 10px;
+  }
+
+  .about-info{
+    font-size: 16px;
+  }
+
+  .process h1{
+    font-size: 25px;
+  }
+
+  .process h3{
+    font-size: 15px;
+  }
+
+  .process-info i{
+    font-size: 40px;
+  }
+
+  .process-info p{
+    font-size: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .form , .social{
+    float:none;
+    width:100%;
+  }
+
+  .about-header{
+    font-size: 10px;
+    padding:10px 10px;
+  }
+
+  .about-info{
+    font-size: 16px;
+  }
+
+  .process h1{
+    font-size: 25px;
+  }
+
+  .process h3{
+    font-size: 15px;
+  }
+
+  .process-info i{
+    font-size: 30px;
+  }
+
+  .process-info p{
+    font-size: 15px;
+  }
+}
